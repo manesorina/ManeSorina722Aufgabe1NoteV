@@ -1,6 +1,6 @@
 public enum Rank {
-    GENIN,
-    CHUNIN,
-    JONIN,
-    KAGE
+    Genin,
+    Chunin,
+    Jonin,
+    Kage
 }

@@ -58,7 +58,7 @@ public class LogReader {
                 Element element = (Element) node;
 
                 String id = getTagValue("Id", element);
-                String name = getTagValue("Charactername", element);
+                String name = getTagValue("Charaktername", element);
                 String rank = getTagValue("Stufe", element);
                 String description = getTagValue("Beschreibung", element);
                 String dateStr = getTagValue("Datum", element);
@@ -70,7 +70,7 @@ public class LogReader {
                 NinjaLog log = new NinjaLog(
                         Integer.parseInt(id),
                         name,
-                        Rank.valueOf(rank.toUpperCase()),
+                        Rank.valueOf(rank),
                         description,
                         date,
                         Double.parseDouble(points)
